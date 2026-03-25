@@ -283,36 +283,52 @@
     .included-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
+      gap: 24px;
       margin-top: 48px;
     }
     .included-item {
-      padding: 24px 20px;
-      background: var(--bg-light);
+      padding: 36px 28px;
       border-radius: 16px;
-      border-left: 4px solid var(--accent);
-    }
-    .included-icon {
-      width: 48px;
-      height: 48px;
-      background: linear-gradient(135deg, var(--primary), var(--accent));
-      border-radius: 12px;
+      position: relative;
+      overflow: hidden;
+      min-height: 280px;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.3rem;
-      color: var(--white);
-      margin-bottom: 14px;
+      flex-direction: column;
+      justify-content: flex-end;
     }
+    .included-item::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      filter: blur(1.5px);
+      z-index: 0;
+    }
+    .included-item::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.52);
+      z-index: 1;
+    }
+    .included-item[data-bg="free-mini-treatments"]::before { background-image: url('free-mini-treatments.jpg'); }
+    .included-item[data-bg="live-device-demos"]::before { background-image: url('live-device-demos.jpg'); }
+    .included-item[data-bg="refreshments"]::before { background-image: url('refreshments.jpg'); }
+    .included-item[data-bg="expert-consults"]::before { background-image: url('expert-consults.jpg'); }
     .included-item h4 {
       font-size: 1rem;
-      color: var(--text-dark);
+      color: var(--white);
       margin-bottom: 6px;
+      position: relative;
+      z-index: 2;
     }
     .included-item p {
       font-size: 0.85rem;
-      color: var(--text-light);
+      color: rgba(255, 255, 255, 0.88);
       line-height: 1.6;
+      position: relative;
+      z-index: 2;
     }
 
     /* âââ TREATMENTS / DEVICES âââ */
@@ -380,11 +396,18 @@
       font-size: 0.95rem;
     }
     .treatment-benefits li::before {
-      content: 'â';
+      content: '';
       position: absolute;
       left: 0;
-      color: var(--accent);
-      font-weight: 700;
+      top: 10px;
+      width: 18px;
+      height: 18px;
+      background: var(--accent);
+      border-radius: 50%;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+      background-size: 12px 12px;
+      background-repeat: no-repeat;
+      background-position: center;
     }
 
     /* âââ URGENCY BANNER âââ */
@@ -572,7 +595,7 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 14px;
       }
-      .included-item { padding: 20px 16px; }
+      .included-item { padding: 24px 18px; min-height: 180px; }
       .included-item h4 { font-size: 0.92rem; }
       .included-item p { font-size: 0.82rem; }
     }
@@ -683,23 +706,19 @@
         <p class="section-subtitle mx-auto">Everything is on us &mdash; come enjoy a premium wellness experience at no cost.</p>
       </div>
       <div class="included-grid">
-        <div class="included-item">
-          <div class="included-icon">&#9889;</div>
+        <div class="included-item" data-bg="free-mini-treatments">
           <h4>Free Mini Treatments</h4>
           <p>Experience complimentary sample sessions with the BTL Exomind and Emtone devices. Feel the difference for yourself.</p>
         </div>
-        <div class="included-item">
-          <div class="included-icon">&#127880;</div>
+        <div class="included-item" data-bg="live-device-demos">
           <h4>Live Device Demos</h4>
           <p>Watch our specialists showcase cutting-edge BTL technology and see real-time results during live demos.</p>
         </div>
-        <div class="included-item">
-          <div class="included-icon">&#127862;</div>
+        <div class="included-item" data-bg="refreshments">
           <h4>Refreshments</h4>
           <p>Enjoy light bites and refreshments while you learn about the latest in non-invasive wellness treatments.</p>
         </div>
-        <div class="included-item">
-          <div class="included-icon">&#128172;</div>
+        <div class="included-item" data-bg="expert-consults">
           <h4>Expert Consults</h4>
           <p>Speak one-on-one with our healthcare professionals to see if these treatments are right for you.</p>
         </div>
