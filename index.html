@@ -37,7 +37,7 @@
     .btn-gold { background: linear-gradient(135deg, var(--gold), #c4943f); color: var(--white); box-shadow: 0 4px 20px rgba(212, 168, 85, 0.35); }
     .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(212, 168, 85, 0.45); }
     .btn-sm { padding: 10px 24px; font-size: 0.9rem; }
-    .hero { position: relative; background: url('images/btl-bus.jpg') center center / cover no-repeat; padding: 100px 24px 110px; text-align: center; color: var(--white); overflow: hidden; }
+    .hero { position: relative; background: url('https://scottk105.sg-host.com/wp-content/uploads/2026/03/Exomind-video-cover_1739534821_original.jpg') center center / cover no-repeat; padding: 100px 24px 110px; text-align: center; color: var(--white); overflow: hidden; }
     .hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(10,61,78,0.82) 0%, rgba(12,139,124,0.75) 50%, rgba(60,153,173,0.72) 100%); z-index: 1; }
     .hero-content { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; }
     .hero-badge { display: inline-block; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.25); padding: 8px 24px; border-radius: 50px; font-size: 0.85rem; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 24px; }
@@ -120,45 +120,20 @@
     footer a { color: var(--primary-light); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
     .footer-divider { width: 60px; height: 2px; background: var(--primary); margin: 20px auto; border-radius: 2px; }
-    @media (max-width: 1024px) {
-      .included-grid { grid-template-columns: repeat(4, 1fr); gap: 14px; }
-      .included-item { padding: 20px 16px; }
-      .included-item h4 { font-size: 0.92rem; }
-      .included-item p { font-size: 0.82rem; }
-    }
-    @media (max-width: 900px) {
-      .treatment-block { grid-template-columns: 1fr; gap: 32px; }
-      .treatment-block.reverse .treatment-images { order: 0; }
-      .treatment-block.reverse .treatment-text { order: 0; }
-      .form-wrapper { grid-template-columns: 1fr; gap: 32px; }
-      .map-wrapper { grid-template-columns: 1fr; }
-      .details-grid { grid-template-columns: repeat(2, 1fr); }
-      .included-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
-    }
-    @media (max-width: 600px) {
-      .details-grid { grid-template-columns: 1fr; }
-      .included-grid { grid-template-columns: 1fr; }
-      .hero { padding: 70px 20px 80px; }
-      .hero h1 { font-size: 1.8rem; }
-      .form-row { grid-template-columns: 1fr; }
-      .header-phone { display: none; }
-    }
+    @media (max-width: 1024px) { .included-grid { grid-template-columns: repeat(4, 1fr); gap: 14px; } .included-item { padding: 20px 16px; } .included-item h4 { font-size: 0.92rem; } .included-item p { font-size: 0.82rem; } }
+    @media (max-width: 900px) { .treatment-block { grid-template-columns: 1fr; gap: 32px; } .treatment-block.reverse .treatment-images { order: 0; } .treatment-block.reverse .treatment-text { order: 0; } .form-wrapper { grid-template-columns: 1fr; gap: 32px; } .map-wrapper { grid-template-columns: 1fr; } .details-grid { grid-template-columns: repeat(2, 1fr); } .included-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; } }
+    @media (max-width: 600px) { .details-grid { grid-template-columns: 1fr; } .included-grid { grid-template-columns: 1fr; } .hero { padding: 70px 20px 80px; } .hero h1 { font-size: 1.8rem; } .form-row { grid-template-columns: 1fr; } .header-phone { display: none; } }
   </style>
 </head>
 <body>
 
-  <!-- TOP BAR -->
   <div class="top-bar">
     ✨ Exclusive Event — <strong>Limited Spots Available</strong> — <a href="#register">Reserve Your Spot Today</a>
   </div>
 
-  <!-- HEADER -->
   <header>
     <div class="header-inner">
-      <a href="#" class="logo">
-        <div class="logo-icon">⚕</div>
-        Seaside Wellness
-      </a>
+      <a href="#" class="logo"><div class="logo-icon">⚕</div>Seaside Wellness</a>
       <div class="header-cta">
         <a href="tel:+17275849800" class="header-phone">📞 (727) 584-9800</a>
         <a href="#register" class="btn btn-primary btn-sm">RSVP Now</a>
@@ -166,7 +141,6 @@
     </div>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
       <div class="hero-badge">✨ Exclusive Wellness Event</div>
@@ -176,78 +150,40 @@
         <a href="#register" class="btn btn-primary">Reserve Your Spot →</a>
         <a href="#treatments" class="btn btn-outline">Learn More</a>
       </div>
-      <div class="hero-date">
-        <span class="date-icon">📅</span>
-        <strong>Monday, April 21st, 2025 &bull; 2:00 PM</strong>
-      </div>
+      <div class="hero-date"><span class="date-icon">📅</span><strong>Monday, April 21st, 2025 &bull; 2:00 PM</strong></div>
     </div>
   </section>
 
-  <!-- EVENT DETAILS -->
   <section class="event-details" id="details">
     <div class="container text-center">
       <div class="section-label">Event Details</div>
       <h2 class="section-title">Everything You Need to Know</h2>
       <p class="section-subtitle mx-auto">Join us for an afternoon of innovation, education, and exclusive offers you won't find anywhere else.</p>
       <div class="details-grid">
-        <div class="detail-card">
-          <div class="detail-icon">📅</div>
-          <h3>Date</h3>
-          <p>Monday, April 21st, 2025</p>
-        </div>
-        <div class="detail-card">
-          <div class="detail-icon">🕒</div>
-          <h3>Time</h3>
-          <p>2:00 PM</p>
-        </div>
-        <div class="detail-card">
-          <div class="detail-icon">📍</div>
-          <h3>Location</h3>
-          <p>7531 Ulmerton Rd<br>Largo, FL 33771</p>
-        </div>
-        <div class="detail-card">
-          <div class="detail-icon">🎟️</div>
-          <h3>Admission</h3>
-          <p>Complimentary<br>RSVP Required</p>
-        </div>
+        <div class="detail-card"><div class="detail-icon">📅</div><h3>Date</h3><p>Monday, April 21st, 2025</p></div>
+        <div class="detail-card"><div class="detail-icon">🕒</div><h3>Time</h3><p>2:00 PM</p></div>
+        <div class="detail-card"><div class="detail-icon">📍</div><h3>Location</h3><p>7531 Ulmerton Rd<br>Largo, FL 33771</p></div>
+        <div class="detail-card"><div class="detail-icon">🎟️</div><h3>Admission</h3><p>Complimentary<br>RSVP Required</p></div>
       </div>
       <div style="margin-top:40px;"><a href="#register" class="btn btn-primary">Reserve Your Free Spot →</a></div>
     </div>
   </section>
 
-  <!-- WHATS INCLUDED -->
   <section class="included-section" id="included">
     <div class="container text-center">
       <div class="section-label">What's Included</div>
       <h2 class="section-title">Your VIP Experience Includes</h2>
       <p class="section-subtitle mx-auto">Everything is complimentary. Just bring yourself and your curiosity.</p>
       <div class="included-grid">
-        <div class="included-item">
-          <div class="included-icon">🧠</div>
-          <h4>Live Device Demos</h4>
-          <p>See Exomind TMS and Emtone in action with live demonstrations on the BTL tour bus.</p>
-        </div>
-        <div class="included-item">
-          <div class="included-icon">👩‍⚕️</div>
-          <h4>Expert Consultations</h4>
-          <p>One-on-one time with our wellness specialists to discuss your personal goals.</p>
-        </div>
-        <div class="included-item">
-          <div class="included-icon">🎁</div>
-          <h4>Exclusive Event Pricing</h4>
-          <p>Special packages and pricing available only to event attendees.</p>
-        </div>
-        <div class="included-item">
-          <div class="included-icon">🍽️</div>
-          <h4>Refreshments</h4>
-          <p>Enjoy complimentary light bites and beverages while you explore.</p>
-        </div>
+        <div class="included-item"><div class="included-icon">🧠</div><h4>Live Device Demos</h4><p>See Exomind TMS and Emtone in action with live demonstrations on the BTL tour bus.</p></div>
+        <div class="included-item"><div class="included-icon">👩‍⚕️</div><h4>Expert Consultations</h4><p>One-on-one time with our wellness specialists to discuss your personal goals.</p></div>
+        <div class="included-item"><div class="included-icon">🎁</div><h4>Exclusive Event Pricing</h4><p>Special packages and pricing available only to event attendees.</p></div>
+        <div class="included-item"><div class="included-icon">🍽️</div><h4>Refreshments</h4><p>Enjoy complimentary light bites and beverages while you explore.</p></div>
       </div>
       <div style="margin-top:40px;"><a href="#register" class="btn btn-primary">Claim Your Spot →</a></div>
     </div>
   </section>
 
-  <!-- TREATMENTS -->
   <section class="treatments-section" id="treatments">
     <div class="container">
       <div class="text-center">
@@ -255,13 +191,11 @@
         <h2 class="section-title">Breakthrough Treatments, One Event</h2>
         <p class="section-subtitle mx-auto">Experience the future of wellness with BTL's most advanced devices.</p>
       </div>
-
-      <!-- Exomind -->
       <div class="treatment-block" style="margin-top:56px;">
         <div class="treatment-images">
-          <img src="images/exomind-patient.jpg" alt="Exomind TMS treatment session" class="treatment-img full-span">
-          <img src="images/exomind-device-1.jpg" alt="Exomind TMS device close-up" class="treatment-img">
-          <img src="images/exomind-device-2.jpg" alt="Exomind TMS device with brain scan" class="treatment-img">
+          <img src="https://scottk105.sg-host.com/wp-content/uploads/2026/03/Exomind-video-cover_1739534821_original.jpg" alt="Exomind TMS treatment session" class="treatment-img full-span">
+          <img src="https://scottk105.sg-host.com/wp-content/uploads/2026/03/Exomind-aplikator_banner_1770800392_original.png" alt="Exomind TMS device close-up" class="treatment-img">
+          <img src="https://scottk105.sg-host.com/wp-content/uploads/2026/03/Exomind-aplikator_banner_1770800392_original.png" alt="Exomind TMS device" class="treatment-img">
         </div>
         <div class="treatment-text">
           <div class="treatment-badge">Mental Wellness</div>
@@ -278,12 +212,10 @@
           <a href="#register" class="btn btn-primary">Ask About Exomind →</a>
         </div>
       </div>
-
-      <!-- Emtone -->
       <div class="treatment-block reverse">
         <div class="treatment-images">
-          <img src="images/emtone-treatment.jpg" alt="Emtone body treatment" class="treatment-img full-span">
-          <img src="images/emtone-device.jpg" alt="Emtone device" class="treatment-img full-span">
+          <img src="https://scottk105.sg-host.com/wp-content/uploads/2026/03/emtone-MOA-preview__FocusFillMaxWyIwLjAwIiwiMC4wMCIsMTAyNCw2MTRd.jpg" alt="Emtone body treatment" class="treatment-img full-span">
+          <img src="https://scottk105.sg-host.com/wp-content/uploads/2026/03/Emtone-patient-testimonial__FocusFillMaxWyIwLjAwIiwiMC4wMCIsNjQwLDM2MF0.jpg" alt="Emtone device" class="treatment-img full-span">
         </div>
         <div class="treatment-text">
           <div class="treatment-badge">Body Rejuvenation</div>
@@ -303,7 +235,6 @@
     </div>
   </section>
 
-  <!-- URGENCY BANNER -->
   <section class="urgency-banner">
     <div class="container">
       <h2>⏳ Limited Availability — Don't Miss Out!</h2>
@@ -312,7 +243,6 @@
     </div>
   </section>
 
-  <!-- CONTACT / REGISTRATION FORM -->
   <section class="form-section" id="register">
     <div class="container">
       <div class="text-center">
@@ -324,69 +254,32 @@
         <div class="form-info">
           <h3>Have Questions?</h3>
           <p>Our team is happy to help you with any questions about the event, treatments, or what to expect during your visit.</p>
-          <div class="form-contact-item">
-            <div class="form-contact-icon">📞</div>
-            <div><span>Call Us</span><br><a href="tel:+17275849800">(727) 584-9800</a></div>
-          </div>
-          <div class="form-contact-item">
-            <div class="form-contact-icon">📍</div>
-            <div><span>Visit Us</span><br><span>7531 Ulmerton Rd, Largo, FL 33771</span></div>
-          </div>
-          <div class="form-contact-item">
-            <div class="form-contact-icon">🕒</div>
-            <div><span>Event Date</span><br><span>Monday, April 21st, 2025 at 2:00 PM</span></div>
-          </div>
-          <div class="form-contact-item">
-            <div class="form-contact-icon">✉️</div>
-            <div><span>Email</span><br><a href="mailto:info@seasidewellnesspc.com">info@seasidewellnesspc.com</a></div>
-          </div>
+          <div class="form-contact-item"><div class="form-contact-icon">📞</div><div><span>Call Us</span><br><a href="tel:+17275849800">(727) 584-9800</a></div></div>
+          <div class="form-contact-item"><div class="form-contact-icon">📍</div><div><span>Visit Us</span><br><span>7531 Ulmerton Rd, Largo, FL 33771</span></div></div>
+          <div class="form-contact-item"><div class="form-contact-icon">🕒</div><div><span>Event Date</span><br><span>Monday, April 21st, 2025 at 2:00 PM</span></div></div>
+          <div class="form-contact-item"><div class="form-contact-icon">✉️</div><div><span>Email</span><br><a href="mailto:info@seasidewellnesspc.com">info@seasidewellnesspc.com</a></div></div>
         </div>
         <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for registering! We will confirm your spot shortly.'); this.reset();">
           <h3>🌟 Secure Your Free Spot</h3>
           <div class="form-row">
-            <div class="form-group">
-              <label for="fname">First Name *</label>
-              <input type="text" id="fname" name="fname" required placeholder="Your first name">
-            </div>
-            <div class="form-group">
-              <label for="lname">Last Name *</label>
-              <input type="text" id="lname" name="lname" required placeholder="Your last name">
-            </div>
+            <div class="form-group"><label for="fname">First Name *</label><input type="text" id="fname" name="fname" required placeholder="Your first name"></div>
+            <div class="form-group"><label for="lname">Last Name *</label><input type="text" id="lname" name="lname" required placeholder="Your last name"></div>
           </div>
           <div class="form-row">
-            <div class="form-group">
-              <label for="email">Email Address *</label>
-              <input type="email" id="email" name="email" required placeholder="you@email.com">
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number *</label>
-              <input type="tel" id="phone" name="phone" required placeholder="(xxx) xxx-xxxx">
-            </div>
+            <div class="form-group"><label for="email">Email Address *</label><input type="email" id="email" name="email" required placeholder="you@email.com"></div>
+            <div class="form-group"><label for="phone">Phone Number *</label><input type="tel" id="phone" name="phone" required placeholder="(xxx) xxx-xxxx"></div>
           </div>
-          <div class="form-group">
-            <label for="interest">Primary Interest</label>
-            <select id="interest" name="interest">
-              <option value="">Select your interest...</option>
-              <option value="exomind">Exomind TMS (Mental Wellness)</option>
-              <option value="emtone">Emtone (Body Rejuvenation)</option>
-              <option value="both">Both Treatments</option>
-              <option value="general">General Information</option>
-            </select>
+          <div class="form-group"><label for="interest">Primary Interest</label>
+            <select id="interest" name="interest"><option value="">Select your interest...</option><option value="exomind">Exomind TMS (Mental Wellness)</option><option value="emtone">Emtone (Body Rejuvenation)</option><option value="both">Both Treatments</option><option value="general">General Information</option></select>
           </div>
-          <div class="form-group">
-            <label for="message">Questions or Comments</label>
-            <textarea id="message" name="message" placeholder="Anything you'd like us to know..."></textarea>
-          </div>
-          <div class="form-submit">
-            <button type="submit" class="btn btn-primary">Complete Registration →</button>
-          </div>
+          <div class="form-group"><label for="message">Questions or Comments</label><textarea id="message" name="message" placeholder="Anything you'd like us to know..."></textarea></div>
+          <div class="form-submit"><button type="submit" class="btn btn-primary">Complete Registration →</button></div>
           <p class="form-note">🔒 Your information is secure and will only be used for event communication.</p>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- MAP SECTION -->
   <section class="map-section" id="location">
     <div class="container">
       <div class="text-center">
@@ -397,53 +290,23 @@
       <div class="map-wrapper">
         <div class="map-info-card">
           <h3>🏥 Seaside Wellness Primary Care</h3>
-          <div class="map-detail">
-            <div class="map-detail-icon">📍</div>
-            <div class="map-detail-text">
-              <h4>Address</h4>
-              <p>7531 Ulmerton Rd<br>Largo, FL 33771</p>
-            </div>
-          </div>
-          <div class="map-detail">
-            <div class="map-detail-icon">📞</div>
-            <div class="map-detail-text">
-              <h4>Phone</h4>
-              <p><a href="tel:+17275849800">(727) 584-9800</a></p>
-            </div>
-          </div>
-          <div class="map-detail">
-            <div class="map-detail-icon">🕒</div>
-            <div class="map-detail-text">
-              <h4>Event Time</h4>
-              <p>Monday, April 21st, 2025<br>Starting at 2:00 PM</p>
-            </div>
-          </div>
-          <div class="map-detail">
-            <div class="map-detail-icon">🚗</div>
-            <div class="map-detail-text">
-              <h4>Parking</h4>
-              <p>Free parking available on-site</p>
-            </div>
-          </div>
-          <div style="margin-top:24px;text-align:center;">
-            <a href="https://maps.google.com/?q=7531+Ulmerton+Rd+Largo+FL+33771" target="_blank" class="btn btn-primary btn-sm">Get Directions →</a>
-          </div>
+          <div class="map-detail"><div class="map-detail-icon">📍</div><div class="map-detail-text"><h4>Address</h4><p>7531 Ulmerton Rd<br>Largo, FL 33771</p></div></div>
+          <div class="map-detail"><div class="map-detail-icon">📞</div><div class="map-detail-text"><h4>Phone</h4><p><a href="tel:+17275849800">(727) 584-9800</a></p></div></div>
+          <div class="map-detail"><div class="map-detail-icon">🕒</div><div class="map-detail-text"><h4>Event Time</h4><p>Monday, April 21st, 2025<br>Starting at 2:00 PM</p></div></div>
+          <div class="map-detail"><div class="map-detail-icon">🚗</div><div class="map-detail-text"><h4>Parking</h4><p>Free parking available on-site</p></div></div>
+          <div style="margin-top:24px;text-align:center;"><a href="https://maps.google.com/?q=7531+Ulmerton+Rd+Largo+FL+33771" target="_blank" class="btn btn-primary btn-sm">Get Directions →</a></div>
         </div>
-        <div class="map-embed">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3530.5!2d-82.7576!3d27.8486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e2186424e737%3A0x6754046387834a6c!2s7531+Ulmerton+Rd%2C+Largo%2C+FL+33771!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <div class="map-embed"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3530.5!2d-82.7576!3d27.8486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e2186424e737%3A0x6754046387834a6c!2s7531+Ulmerton+Rd%2C+Largo%2C+FL+33771!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <div class="container">
       <div class="footer-brand">Seaside Wellness Primary Care</div>
       <p>7531 Ulmerton Rd, Largo, FL 33771 &bull; <a href="tel:+17275849800">(727) 584-9800</a></p>
       <div class="footer-divider"></div>
-      <p>&copy; 2025 Seaside Wellness Primary Care. All rights reserved.<br>
-      <a href="https://seasidewellnesspc.com" target="_blank">seasidewellnesspc.com</a></p>
+      <p>&copy; 2025 Seaside Wellness Primary Care. All rights reserved.<br><a href="https://seasidewellnesspc.com" target="_blank">seasidewellnesspc.com</a></p>
     </div>
   </footer>
 
