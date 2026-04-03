@@ -702,7 +702,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- HEADER -->
   <header>
     <div class="header-inner">
-      <a href="https://www.seasidewellnesspc.com/" class="logo">
+      <a href="#" class="logo">
         <div class="logo-icon">SW</div>
         Seaside Wellness Primary Care
       </a>
@@ -907,38 +907,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a href="https://www.seasidewellnesspc.com/" target="_blank">seasidewellnesspc.com</a>
           </div>
         </div>
-        <form class="contact-form" id="registration-form" onsubmit="handleSubmit(event)">
-          <h3>&#128221; Registration Form</h3>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="firstName">First Name *</label>
-              <input type="text" id="firstName" name="firstName" placeholder="Jane" required>
-            </div>
-            <div class="form-group">
-              <label for="lastName">Last Name *</label>
-              <input type="text" id="lastName" name="lastName" placeholder="Smith" required>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="email">Email Address *</label>
-              <input type="email" id="email" name="email" placeholder="jane@example.com" required>
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number *</label>
-              <input type="tel" id="phone" name="phone" placeholder="(727) 000-0000" required>
-            </div>
-          </div>
-          
-          <div class="form-group">
-            <label for="message">Questions or special requests</label>
-            <textarea id="message" name="message" placeholder="Let us know if you have any questions or accommodations needed..."></textarea>
-          </div>
-          <div class="form-submit">
-            <button type="submit" class="btn btn-primary">Register My Interest</button>
-          </div>
-          <p class="form-note">Your information is secure and will only be used for event communication.</p>
-        </form>
+        <div class="contact-form">
+          <iframe
+            src="https://link.aevadigital.com/widget/form/NmDNM5GjnLyLpukgGsQT"
+            style="width:100%;height:100%;border:none;border-radius:10px"
+            id="inline-NmDNM5GjnLyLpukgGsQT"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Seaside Ad form"
+            data-height="464"
+            data-layout-iframe-id="inline-NmDNM5GjnLyLpukgGsQT"
+            data-form-id="NmDNM5GjnLyLpukgGsQT"
+            title="Seaside Ad form"
+          ></iframe>
+          <script src="https://link.aevadigital.com/js/form_embed.js"></script>
+        </div>
       </div>
     </div>
   </section>
@@ -1011,17 +999,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </footer>
 
   <script>
-    function handleSubmit(e) {
-      e.preventDefault();
-      const form = e.target;
-      const data = new FormData(form);
-      const name = data.get('firstName');
-      const thankYou = document.createElement('div');
-      thankYou.style.cssText = 'text-align:center;padding:40px 20px;';
-      thankYou.innerHTML = '<div style="font-size:3rem;margin-bottom:16px;">&#127881;</div><h3 style="font-family:var(--font-heading);font-size:1.6rem;color:var(--text-dark);margin-bottom:12px;">Thank You, ' + name + '!</h3><p style="color:var(--text-light);line-height:1.7;max-width:400px;margin:0 auto;">Your registration has been received. We\'ll be in touch shortly to confirm your spot at the Wellness Lounge On Wheels event.</p>';
-      form.replaceWith(thankYou);
-      thankYou.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
