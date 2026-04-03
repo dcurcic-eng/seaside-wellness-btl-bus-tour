@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P7JR4PXK');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Thank You | Seaside Wellness Primary Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --primary: #3C99AD;
+      --primary-dark: #0C8B7C;
+      --primary-light: #6FCCE0;
+      --accent: #10AE9C;
+      --text-dark: #070707;
+      --text-body: #383838;
+      --text-light: #656565;
+      --bg-light: #F9FAFA;
+      --bg-soft: #EDF6F8;
+      --white: #FFFFFF;
+      --gold: #D4A855;
+      --font-heading: 'Marcellus', serif;
+      --font-body: 'Poppins', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--text-body);
+      line-height: 1.7;
+      background: var(--white);
+      overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* --- HEADER / NAV --- */
+    header {
+      background: var(--white);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      color: var(--primary);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 1.1rem;
+    }
+    .header-cta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .header-phone {
+      color: var(--text-body);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    .header-phone:hover { color: var(--primary); }
+
+    /* --- BUTTONS --- */
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: none;
+      text-align: center;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: var(--white);
+      box-shadow: 0 4px 20px rgba(60, 153, 173, 0.35);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(60, 153, 173, 0.45);
+    }
+    .btn-sm { padding: 10px 24px; font-size: 0.9rem; }
+
+    /* --- THANK YOU MAIN --- */
+    .thank-you-section {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 24px;
+      background: var(--bg-soft);
+    }
+    .thank-you-content {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .thank-you-icon {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 32px;
+      background: linear-gradient(135deg, rgba(60,153,173,0.12), rgba(16,174,156,0.12));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .thank-you-icon svg {
+      width: 48px;
+      height: 48px;
+      stroke: var(--primary);
+      stroke-width: 2;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .thank-you-content h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2.4rem, 5vw, 3.4rem);
+      color: var(--text-dark);
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    .thank-you-content p {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      line-height: 1.8;
+      margin-bottom: 16px;
+      font-weight: 300;
+    }
+    .thank-you-content p strong {
+      color: var(--text-body);
+      font-weight: 500;
+    }
+    .event-reminder {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--white);
+      border: 1px solid rgba(60,153,173,0.15);
+      padding: 16px 28px;
+      border-radius: 16px;
+      font-size: 1rem;
+      color: var(--text-body);
+      margin: 28px 0 36px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+    }
+    .event-reminder .date-icon { font-size: 1.3rem; }
+
+    /* --- FOOTER --- */
+    footer {
+      background: #0a2a33;
+      color: rgba(255,255,255,0.7);
+      text-align: center;
+      padding: 40px 24px;
+    }
+    footer .footer-brand {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    footer p { font-size: 0.85rem; line-height: 1.7; }
+    footer a { color: var(--primary-light); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    .footer-divider {
+      width: 60px;
+      height: 2px;
+      background: var(--primary);
+      margin: 20px auto;
+      border-radius: 2px;
+    }
+
+    /* --- RESPONSIVE --- */
+    @media (max-width: 600px) {
+      .header-phone { display: none; }
+      .header-inner { padding: 10px 16px; }
+      .logo { font-size: 1.1rem; gap: 8px; }
+      .logo-icon { width: 34px; height: 34px; font-size: 0.9rem; }
+      .header-cta .btn { padding: 10px 20px; font-size: 0.85rem; }
+      .thank-you-section { padding: 60px 16px; }
+      .thank-you-icon { width: 80px; height: 80px; margin-bottom: 24px; }
+      .thank-you-icon svg { width: 38px; height: 38px; }
+      .event-reminder { padding: 14px 20px; font-size: 0.9rem; flex-direction: column; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7JR4PXK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="https://www.seasidewellnesspc.com/" class="logo">
+        <div class="logo-icon">SW</div>
+        Seaside Wellness Primary Care
+      </a>
+      <div class="header-cta">
+        <a href="tel:727-270-5047" class="header-phone">727-270-5047</a>
+        <a href="../index.html" class="btn btn-primary btn-sm">Back to Event</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- THANK YOU -->
+  <main class="thank-you-section">
+    <div class="thank-you-content">
+      <div class="thank-you-icon">
+        <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      </div>
+      <h1>Thank You!</h1>
+      <p>
+        We're thrilled that you'll be joining us at the <strong>Wellness Lounge On Wheels</strong> event.
+        Our team will reach out to you before the event to confirm all the details and make sure everything is set for your visit.
+      </p>
+      <div class="event-reminder">
+        <span class="date-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>
+        <strong>Tuesday, April 21, 2026 &bull; 12:30 &ndash; 2:30 PM</strong>
+      </div>
+      <a href="../index.html" class="btn btn-primary">Back to Event Page</a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">Seaside Wellness Primary Care</div>
+    <p>7531 Ulmerton Rd, Largo, FL 33771 &bull; <a href="tel:727-270-5047">727-270-5047</a></p>
+    <div class="footer-divider"></div>
+    <p>&copy; 2026 Seaside Wellness Primary Care. All rights reserved.<br>
+      <a href="https://www.seasidewellnesspc.com/your-privacy">Privacy Policy</a> &bull;
+      <a href="https://www.seasidewellnesspc.com/our-terms">Terms &amp; Conditions</a>
+    </p>
+  </footer>
+
+  <!-- FORM SUCCESS EVENT: fires once per browser using sessionStorage dedup -->
+  <script>
+    (function() {
+      var storageKey = 'swpc_form_success_fired';
+      try {
+        if (!sessionStorage.getItem(storageKey)) {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({ 'event': 'form-success' });
+          sessionStorage.setItem(storageKey, '1');
+        }
+      } catch (e) {
+        // sessionStorage unavailable (e.g. private browsing), fire the event anyway
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ 'event': 'form-success' });
+      }
+    })();
+  </script>
+</body>
+</html>
